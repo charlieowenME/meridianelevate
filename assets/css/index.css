@@ -782,6 +782,9 @@
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
+  .w-\[24px\] {
+    width: 24px;
+  }
   .w-\[70\%\] {
     width: 70%;
   }
@@ -1947,6 +1950,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
   }
   .font-mono {
     font-family: var(--font-mono);

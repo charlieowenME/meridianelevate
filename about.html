@@ -363,136 +363,256 @@
           <div
             class="p-4 md:p-8 lg:p-12 bg-white/70 dark:bg-[#0d1117] backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 dark:border-[#30363d] overflow-hidden relative"
           >
-            <!-- Header -->
-            <div
-              class="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 mb-8 md:mb-12"
-            >
-              <div class="flex items-center gap-2 md:gap-4">
-                <div
-                  class="size-10 md:size-12 rounded-full overflow-hidden border-2 border-primary-500"
-                >
-                  <img
-                    src="./assets/images/man-portfolio.webp"
-                    alt="Charlie Owen"
-                    class="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h4
-                    class="md:text-lg font-bold text-gray-900 dark:text-white"
-                  >
-                    github.com/charlieowenME
-                  </h4>
-                  <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
-                    <span
-                      class="text-xs text-emerald-500 font-bold uppercase tracking-wider"
-                      >Active</span
-                    >
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex items-center gap-2 md:gap-4 text-xs font-bold text-gray-500"
-              >
-                <span>Less</span>
-                <div class="flex gap-1.5">
-                  <div
-                    class="w-3 h-3 rounded-sm bg-gray-100 dark:bg-gray-800"
-                  ></div>
-                  <div class="w-3 h-3 rounded-sm bg-emerald-900/40"></div>
-                  <div class="w-3 h-3 rounded-sm bg-emerald-900/60"></div>
-                  <div class="w-3 h-3 rounded-sm bg-emerald-500"></div>
-                </div>
-                <span>More</span>
-              </div>
-            </div>
 
-            <!-- Simulated Contribution Graph -->
-            <div class="overflow-x-auto pb-4 md:pb-6 mb-4 md:mb-6">
-              <div class="min-w-[800px]">
-                <div
-                  class="flex gap-4 text-[10px] text-gray-500 uppercase tracking-widest font-bold mb-4 ml-10"
-                >
-                  <span>Jan</span><span>Feb</span><span>Mar</span
-                  ><span>Apr</span><span>May</span><span>Jun</span>
-                  <span>Jul</span><span>Aug</span><span>Sep</span
-                  ><span>Oct</span><span>Nov</span><span>Dec</span>
-                </div>
-                <div class="flex gap-2">
-                  <div
-                    class="flex flex-col gap-2.5 text-[10px] text-gray-500 font-bold pt-1"
-                  >
-                    <span>Mon</span><span>Wed</span><span>Fri</span>
-                  </div>
-                  <div class="grid grid-flow-col grid-rows-7 gap-1.5 flex-1">
-                    <!-- This simulates the coding pattern shown in the image -->
-                    <!-- We'll use JS or just static classes to create the "CODING" pattern -->
-                    <!-- Generating a dense grid with some high intensity dots -->
-                    <script>
-                      const container = document.currentScript.parentElement;
-                      const columns = 52;
-                      const rows = 7;
-                      // High intensity pattern for "CODING"
-                      const pattern = [
-                        [2, 1],
-                        [3, 1],
-                        [4, 1],
-                        [5, 1],
-                        [6, 1], // C
-                        [2, 5],
-                        [3, 5],
-                        [4, 5],
-                        [5, 5],
-                        [6, 5], // O
-                        [2, 9],
-                        [3, 9],
-                        [4, 9],
-                        [5, 9],
-                        [6, 9], // More...
-                      ];
-                      for (let i = 0; i < columns * rows; i++) {
-                        const dot = document.createElement("div");
-                        const intensity =
-                          Math.random() > 0.7
-                            ? "bg-emerald-500"
-                            : Math.random() > 0.4
-                              ? "bg-emerald-900/60"
-                              : Math.random() > 0.2
-                                ? "bg-emerald-900/30"
-                                : "bg-gray-100 dark:bg-gray-800";
-                        dot.className = `w-3.5 h-3.5 rounded-sm transition-all hover:scale-125 ${intensity}`;
-                        container.appendChild(dot);
-                      }
-                    </script>
-                  </div>
-                </div>
-              </div>
-            </div>
+<!-- Header -->
+<div
+  class="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 mb-8 md:mb-12"
+>
+  <div class="flex items-center gap-2 md:gap-4">
+    <div
+      class="size-10 md:size-12 rounded-full overflow-hidden border-2 border-primary-500"
+    >
+      <img
+        src="./assets/images/man-portfolio.webp"
+        alt="Charlie Owen"
+        class="w-full h-full object-cover"
+      />
+    </div>
 
-            <!-- Profile Info -->
-            <div class="text-center relative z-10">
-              <h2
-                class="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-gray-900 dark:text-white"
-              >
-                Charlie Owen
-              </h2>
-              <p
-                class="text-lg md:text-xl font-bold text-primary-500 mb-4 md:mb-8 uppercase"
-              >
-                UK Market Entry & Commercial Specialist
-              </p>
-              <button
-                class="px-4 md:px-6 py-3 md:py-4 bg-[#21262d] dark:bg-[#21262d] text-white rounded-xl border border-white/10 flex items-center gap-2 md:gap-3 mx-auto hover:bg-[#30363d] transition-all group"
-              >
-                <span class="font-bold">Schedule Call</span>
-                
-              </button>
-            </div>
+    <div>
+      <h4
+        class="md:text-lg font-bold text-gray-900 dark:text-white"
+      >
+        github.com/charlieowenME
+      </h4>
+
+      <div class="flex items-center gap-2">
+        <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+
+        <span
+          class="text-xs text-emerald-500 font-bold uppercase tracking-wider"
+        >
+          Active
+        </span>
+      </div>
+    </div>
+  </div>
+
+<!-- Calendar Key -->
+<div class="flex items-center gap-2 md:gap-4 text-[10px] text-gray-500 font-bold">
+  <span class="flex items-center gap-1.5">
+    <span class="w-3 h-3 rounded-sm bg-gray-800"></span>
+    Non-working day
+  </span>
+
+  <span class="flex items-center gap-1.5">
+    <span class="w-3 h-3 rounded-sm bg-emerald-900/60"></span>
+    Booked
+  </span>
+
+  <span class="flex items-center gap-1.5">
+    <span class="w-3 h-3 rounded-sm bg-emerald-500"></span>
+    Available
+  </span>
+</div>
+</div>
+
+<!-- Contribution / Availability Graph -->
+<div class="overflow-x-auto pb-4 md:pb-6 mb-4 md:mb-6">
+  <div class="min-w-[800px]">
+
+
+
+    <!-- Month header -->
+    <div class="flex gap-2 mb-2">
+      <div class="w-[24px] shrink-0"></div>
+
+      <div
+        id="contribution-months"
+        class="grid gap-1.5 flex-1 text-[10px] text-gray-500 uppercase tracking-widest font-bold"
+        style="grid-template-columns: repeat(52, minmax(0, 1fr));"
+      ></div>
+    </div>
+
+    <!-- Calendar grid -->
+    <div class="flex gap-2">
+
+      <!-- Days -->
+      <div
+        class="grid grid-rows-7 gap-1.5 w-[24px] shrink-0 text-[10px] text-gray-500 font-bold"
+        style="grid-template-rows: repeat(7, 14px);"
+      >
+        <span>Mon</span>
+        <span>Tues</span>
+        <span>Wed</span>
+        <span>Thurs</span>
+        <span>Fri</span>
+        <span>Sat</span>
+        <span>Sun</span>
+      </div>
+
+      <!-- 52 weeks x 7 days -->
+      <div
+        id="contribution-grid"
+        class="grid grid-flow-col grid-rows-7 gap-1.5 flex-1"
+      ></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const grid = document.getElementById("contribution-grid");
+  const monthsContainer = document.getElementById("contribution-months");
+
+  const year = 2026;
+  const totalWeeks = 52;
+
+  // Start on Monday 5 January 2026.
+  const firstMonday = new Date(year, 0, 5);
+
+  // Status for each day.
+function getStatus(week, day) {
+
+  // Saturday and Sunday = non-working.
+  if (day === 5 || day === 6) {
+    return "non-working";
+  }
+
+  // Keep the existing booking pattern before the
+  // third week of August.
+  if (week < 32) {
+    const value = (week * 17 + day * 31 + 13) % 100;
+
+    if (value < 30) {
+      return "booked";
+    }
+
+    return "available";
+  }
+
+  // From the week beginning 17 August:
+  // Every Tuesday is booked.
+  if (day === 1) {
+    return "booked";
+  }
+
+  // Every other Thursday is booked.
+  // week 32 = 17 Aug, then alternate Thursdays.
+  if (day === 3 && (week - 32) % 2 === 0) {
+    return "booked";
+  }
+
+  return "available";
+}
+
+
+
+  // Create 52 weeks x 7 days.
+  for (let week = 0; week < totalWeeks; week++) {
+
+    for (let day = 0; day < 7; day++) {
+
+      const cell = document.createElement("div");
+
+      const currentDate = new Date(firstMonday);
+
+      currentDate.setDate(
+        firstMonday.getDate() + week * 7 + day
+      );
+
+      const status = getStatus(week, day);
+
+      let statusClass;
+
+      if (status === "non-working") {
+        statusClass = "bg-gray-800";
+      } else if (status === "booked") {
+        statusClass = "bg-emerald-900/60";
+      } else {
+        statusClass = "bg-emerald-500";
+      }
+
+      cell.className =
+        `w-3.5 h-3.5 rounded-sm transition-all hover:scale-125 ${statusClass}`;
+
+      cell.title =
+        `${currentDate.toLocaleDateString("en-GB", {
+          weekday: "long",
+          day: "numeric",
+          month: "long",
+          year: "numeric"
+        })} — ${
+          status === "non-working"
+            ? "Non-working day"
+            : status === "booked"
+              ? "Booked"
+              : "Available"
+        }`;
+
+      grid.appendChild(cell);
+    }
+  }
+
+  // Month names.
+  const monthNames = [
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+  ];
+
+  let currentMonth = null;
+  let monthStartWeek = 0;
+
+  for (let week = 0; week < totalWeeks; week++) {
+
+    const weekDate = new Date(firstMonday);
+
+    weekDate.setDate(
+      firstMonday.getDate() + week * 7
+    );
+
+    const month = weekDate.getMonth();
+
+    if (currentMonth === null) {
+      currentMonth = month;
+      monthStartWeek = week;
+    }
+
+    const isLastWeek = week === totalWeeks - 1;
+
+    if (month !== currentMonth || isLastWeek) {
+
+      const endWeek = isLastWeek
+        ? week
+        : week - 1;
+
+      const span =
+        endWeek - monthStartWeek + 1;
+
+      const monthLabel =
+        document.createElement("span");
+
+      monthLabel.textContent =
+        monthNames[currentMonth];
+
+      monthLabel.style.gridColumn =
+        `${monthStartWeek + 1} / span ${span}`;
+
+      monthLabel.className =
+        "text-left";
+
+      monthsContainer.appendChild(monthLabel);
+
+      currentMonth = month;
+      monthStartWeek = week;
+    }
+  }
+</script>
+
           </div>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10">
+
           <!-- Who I Am -->
           <div class="reveal-left">
             <div
@@ -514,76 +634,86 @@
                     />
                   </svg>
                 </div>
+
                 <h3
                   class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white uppercase tracking-tighter"
                 >
                   Who I Am
                 </h3>
               </div>
+
               <p
                 class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-4 md:mb-6 lg:mb-10"
               >
                 I'm Charlie Owen, Founder of Meridian Elevate, with 12+ years of experience in outbound sales and 9+ years working with businesses looking to establish and grow in the UK.
 
-My approach is simple: commercial, hands-on and results-focused. 
-
+                My approach is simple: commercial, hands-on and results-focused.
               </p>
+
               <p
                 class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-4 md:mb-6 lg:mb-10"
               >
                 I help international businesses build their UK presence, from company setup and market analysis through to outbound sales, marketplace management and ongoing UK representation. Before founding Meridian Elevate, I was UK Head of Commercial at ICP Logistica, where I helped transform the business from a small 3PL into a major player across logistics and tech repair by taking a back-to-basics approach to outbound sales.
-
-
               </p>
 
               <!-- Stats Row -->
               <div class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
+
                 <div
                   class="p-4 md:p-6 bg-gray-50 dark:bg-[#161b22] rounded-2xl text-center border border-transparent hover:border-emerald-500/30 transition-all"
                 >
                   <div class="text-2xl lg:text-3xl font-black text-emerald-500 mb-1">
                     12+
                   </div>
+
                   <div
                     class="text-[10px] font-bold text-gray-500 uppercase tracking-widest text-center leading-tight"
                   >
                     Years Experiance
                   </div>
                 </div>
+
                 <div
                   class="p-4 md:p-6 bg-gray-50 dark:bg-[#161b22] rounded-2xl text-center border border-transparent hover:border-emerald-500/30 transition-all"
                 >
                   <div class="text-2xl lg:text-3xl font-black text-emerald-500 mb-1">
                     9+
                   </div>
+
                   <div
                     class="text-[10px] font-bold text-gray-500 uppercase tracking-widest text-center leading-tight"
                   >
                     Years B2B
                   </div>
                 </div>
+
                 <div
                   class="p-4 md:p-6 bg-gray-50 dark:bg-[#161b22] rounded-2xl text-center border border-transparent hover:border-emerald-500/30 transition-all"
                 >
                   <div class="text-2xl lg:text-3xl font-black text-emerald-500 mb-1">
                     40+
                   </div>
+
                   <div
                     class="text-[10px] font-bold text-gray-500 uppercase tracking-widest text-center leading-tight"
                   >
-                Clients Supported
+                    Clients Supported
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
 
-          <!-- My Toolbox -->
+
+          <!-- What I Bring -->
           <div class="reveal-right">
             <div
               class="p-4 md:p-6 lg:p-10 bg-white/70 dark:bg-[#0d1117] backdrop-blur-xl rounded-3xl border border-white/20 dark:border-[#30363d] h-full shadow-xl"
             >
+
               <div class="flex items-center gap-4 mb-8">
+
                 <div
                   class="w-8 h-8 rounded-full bg-primary-500/20 flex items-center justify-center"
                 >
@@ -601,26 +731,34 @@ My approach is simple: commercial, hands-on and results-focused.
                     />
                   </svg>
                 </div>
+
                 <h3
                   class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white uppercase tracking-tighter"
                 >
                   What I Bring
                 </h3>
+
               </div>
+
 
               <!-- Skill Bars -->
               <div class="space-y-6 pt-6">
+
                 <div>
                   <div class="flex justify-between mb-2">
                     <span
                       class="text-sm font-semibold text-gray-700 dark:text-gray-300"
-                      >UK Market Entry</span
                     >
+                      UK Market Entry
+                    </span>
+
                     <span
                       class="text-sm font-semibold text-primary-600 dark:text-primary-400"
-                      >9 Years</span
                     >
+                      9 Years
+                    </span>
                   </div>
+
                   <div
                     class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden"
                   >
@@ -631,17 +769,22 @@ My approach is simple: commercial, hands-on and results-focused.
                   </div>
                 </div>
 
+
                 <div>
                   <div class="flex justify-between mb-2">
                     <span
                       class="text-sm font-semibold text-gray-700 dark:text-gray-300"
-                      >Commercial Strategy</span
                     >
+                      Commercial Strategy
+                    </span>
+
                     <span
                       class="text-sm font-semibold text-primary-600 dark:text-primary-400"
-                      >9 Years</span
                     >
+                      9 Years
+                    </span>
                   </div>
+
                   <div
                     class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden"
                   >
@@ -652,17 +795,22 @@ My approach is simple: commercial, hands-on and results-focused.
                   </div>
                 </div>
 
+
                 <div>
                   <div class="flex justify-between mb-2">
                     <span
                       class="text-sm font-semibold text-gray-700 dark:text-gray-300"
-                      >Outbound Sales</span
                     >
+                      Outbound Sales
+                    </span>
+
                     <span
                       class="text-sm font-semibold text-primary-600 dark:text-primary-400"
-                      >12 Years</span
                     >
+                      12 Years
+                    </span>
                   </div>
+
                   <div
                     class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden"
                   >
@@ -673,17 +821,22 @@ My approach is simple: commercial, hands-on and results-focused.
                   </div>
                 </div>
 
+
                 <div>
                   <div class="flex justify-between mb-2">
                     <span
                       class="text-sm font-semibold text-gray-700 dark:text-gray-300"
-                      >UK Market Management</span
                     >
+                      UK Market Management
+                    </span>
+
                     <span
                       class="text-sm font-semibold text-primary-600 dark:text-primary-400"
-                      >9 Years</span
                     >
+                      9 Years
+                    </span>
                   </div>
+
                   <div
                     class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden"
                   >
@@ -693,48 +846,68 @@ My approach is simple: commercial, hands-on and results-focused.
                     ></div>
                   </div>
                 </div>
+
               </div>
+
 
               <!-- Tech Tags -->
               <div class="flex flex-wrap gap-2.5 mt-6 lg:mt-10">
+
                 <span
                   class="px-5 py-2.5 bg-gray-100 dark:bg-[#161b22] text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-transparent hover:border-emerald-500/50 transition-all"
-                  >Sales</span
                 >
+                  Sales
+                </span>
+
                 <span
                   class="px-5 py-2.5 bg-gray-100 dark:bg-[#161b22] text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-transparent hover:border-emerald-500/50 transition-all"
-                  >Strategy</span
                 >
+                  Strategy
+                </span>
+
                 <span
                   class="px-5 py-2.5 bg-gray-100 dark:bg-[#161b22] text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-transparent hover:border-emerald-500/50 transition-all"
-                  >Outbound</span
                 >
+                  Outbound
+                </span>
+
                 <span
                   class="px-5 py-2.5 bg-gray-100 dark:bg-[#161b22] text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-transparent hover:border-emerald-500/50 transition-all"
-                  >Analysis</span
                 >
+                  Analysis
+                </span>
+
                 <span
                   class="px-5 py-2.5 bg-gray-100 dark:bg-[#161b22] text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-transparent hover:border-emerald-500/50 transition-all"
-                  >Negotiation</span
                 >
+                  Negotiation
+                </span>
+
                 <span
                   class="px-5 py-2.5 bg-gray-100 dark:bg-[#161b22] text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-transparent hover:border-emerald-500/50 transition-all"
-                  >Prospecting</span
                 >
+                  Prospecting
+                </span>
+
                 <span
                   class="px-5 py-2.5 bg-gray-100 dark:bg-[#161b22] text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-transparent hover:border-emerald-500/50 transition-all"
-                  >Positioning</span
                 >
+                  Positioning
+                </span>
+
                 <span
                   class="px-5 py-2.5 bg-gray-100 dark:bg-[#161b22] text-gray-700 dark:text-gray-300 text-xs font-bold rounded-lg border border-transparent hover:border-emerald-500/50 transition-all"
-                  >Expansion</span
                 >
+                  Expansion
+                </span>
+
               </div>
+
             </div>
           </div>
+
         </div>
-      </div>
-    </section>
+
 
     <!-- Professional Experience Timeline -->
     <section
@@ -1154,7 +1327,7 @@ At ICP Logistica, I put those skills into the B2B world, helping transform a sma
 
     <!-- GitHub -->
     <a
-      href="javascript:void(0)"
+      href="https://github.com/charlieowenME"
       class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-800 hover:bg-gradient-to-r hover:from-primary-500 hover:to-accent-500 transition-all hover:scale-110"
       aria-label="GitHub"
     >
@@ -1167,7 +1340,7 @@ At ICP Logistica, I put those skills into the B2B world, helping transform a sma
 
     <!-- LinkedIn -->
     <a
-      href="javascript:void(0)"
+      href="https://www.linkedin.com/in/charlieowen-commercial"
       class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-800 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-600 transition-all hover:scale-110"
       aria-label="LinkedIn"
     >
@@ -1180,7 +1353,7 @@ At ICP Logistica, I put those skills into the B2B world, helping transform a sma
 
     <!-- Slack -->
     <a
-      href="javascript:void(0)"
+      href="https://join.slack.com/t/meridianelevate/shared_invite/zt-46m9t8bw7-A6GYGeGqAc_Fqe2DHwBLIg"
       class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-800 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 transition-all hover:scale-110"
       aria-label="Slack"
     >
