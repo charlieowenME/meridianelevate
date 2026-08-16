@@ -2204,9 +2204,6 @@
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
   }
-  .text-accent-400 {
-    color: var(--color-accent-400);
-  }
   .text-accent-500 {
     color: var(--color-accent-500);
   }
@@ -2263,9 +2260,6 @@
   }
   .text-green-500 {
     color: var(--color-green-500);
-  }
-  .text-green-600 {
-    color: var(--color-green-600);
   }
   .text-indigo-500 {
     color: var(--color-indigo-500);
