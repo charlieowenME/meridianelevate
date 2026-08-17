@@ -1307,6 +1307,9 @@
   .bg-\[\#14A800\] {
     background-color: #14A800;
   }
+  .bg-\[\#25D366\] {
+    background-color: #25D366;
+  }
   .bg-accent-400\/10 {
     background-color: color-mix(in srgb, #f472b6 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
