@@ -359,7 +359,76 @@
             Flexible options designed around where you are in your UK journey, from getting established to building a long-term commercial presence.
           </p>
         </div>
+<!-- Country Pricing Selector -->
+<div class="mt-8 mb-8 md:mb-16 lg:mb-20 reveal text-center">
+  <p class="text-sm font-bold text-gray-500 dark:text-gray-400 mb-4">
+    Select your country
+  </p>
 
+  <div class="flex flex-wrap gap-2.5 justify-center" id="pricing-country-selector">
+
+    <button
+      type="button"
+      data-country="sriLanka"
+      class="pricing-country-btn px-4 py-2 text-xs font-bold rounded-xl border transition-all bg-primary-500 text-white border-primary-500 shadow-lg"
+    >
+      Sri Lanka
+    </button>
+
+    <button
+      type="button"
+      data-country="india"
+      class="pricing-country-btn px-4 py-2 text-xs font-bold bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary-500 hover:text-primary-600 transition-all"
+    >
+      India
+    </button>
+
+    <button
+      type="button"
+      data-country="pakistan"
+      class="pricing-country-btn px-4 py-2 text-xs font-bold bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary-500 hover:text-primary-600 transition-all"
+    >
+      Pakistan
+    </button>
+
+    <button
+      type="button"
+      data-country="bangladesh"
+      class="pricing-country-btn px-4 py-2 text-xs font-bold bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary-500 hover:text-primary-600 transition-all"
+    >
+      Bangladesh
+    </button>
+
+    <button
+      type="button"
+      data-country="nepal"
+      class="pricing-country-btn px-4 py-2 text-xs font-bold bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary-500 hover:text-primary-600 transition-all"
+    >
+      Nepal
+    </button>
+
+    <button
+      type="button"
+      data-country="uae"
+      class="pricing-country-btn px-4 py-2 text-xs font-bold bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary-500 hover:text-primary-600 transition-all"
+    >
+      UAE
+    </button>
+
+    <button
+      type="button"
+      data-country="otherAsia"
+      class="pricing-country-btn px-4 py-2 text-xs font-bold bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary-500 hover:text-primary-600 transition-all"
+    >
+      Other Asia
+    </button>
+
+  </div>
+
+<p class="text-xs text-gray-400 dark:text-gray-500 mt-6 text-center">
+  Prices shown in your selected billing currency.
+</p>
+</div>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 items-stretch"
         >
@@ -379,17 +448,19 @@
               </p>
 
               <div class="flex items-baseline gap-2 mb-5 lg:mb-8">
-                <span
-                  class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 dark:text-white"
-                >
-                  570K
-                </span>
+<span
+  id="essential-setup-price"
+  class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 dark:text-white"
+>
+  570K
+</span>
 
-                <span
-                  class="text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest text-sm"
-                >
-                  LKR
-                </span>
+<span
+  id="essential-setup-currency"
+  class="text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest text-sm"
+>
+  LKR
+</span>
               </div>
 <p
   class="text-gray-600 dark:text-gray-400 mb-10 leading-relaxed text-lg"
@@ -487,7 +558,9 @@
                 </div>
               </div>
 <p class="text-sm md:text-base text-gray-500 dark:text-gray-400 mt-4">
-  <strong class="text-white">LKR 315K per month fee</strong><br>
+  <strong id="essential-monthly" class="text-white">
+  LKR 315K per month fee
+</strong><br>
   Ongoing UK infrastructure, marketplace management, outreach and representation.<br><br>
   See full package breakdown below.
 </p>
@@ -518,17 +591,19 @@
 </p>
 
 <div class="flex items-baseline gap-2 mb-5 lg:mb-8">
-  <span
-    class="text-4xl md:text-5xl lg:text-6xl font-black text-white"
-  >
-    650K
-  </span>
+<span
+  id="advantage-setup-price"
+  class="text-4xl md:text-5xl lg:text-6xl font-black text-white"
+>
+  650K
+</span>
 
-  <span
-    class="text-gray-400 font-bold uppercase tracking-widest text-sm"
-  >
-    LKR
-  </span>
+<span
+  id="advantage-setup-currency"
+  class="text-gray-400 font-bold uppercase tracking-widest text-sm"
+>
+  LKR
+</span>
 </div>
 <p class="text-gray-400 mb-10 leading-relaxed text-lg">
   Build on the complete Essential foundation with greater marketplace activity, expanded UK outreach and closer commercial involvement. Meridian Elevate works alongside your sales and development teams to strengthen UK positioning, improve your website for UK buyers and take a more active role in developing opportunities and relationships.
@@ -624,7 +699,9 @@
 </div>
               </div>
 <p class="text-sm md:text-base text-gray-500 dark:text-gray-400 mt-4">
-  <strong class="text-gradient">LKR 378K per month fee</strong><br>
+  <strong id="advantage-monthly" class="text-gradient">
+  LKR 378K per month fee
+</strong><br>
   Expanded marketplace, outreach, website alignment and UK business development.<br><br>
   <span class="text-gray-500 dark:text-gray-400">See full package breakdown below.</span>
 </p>
@@ -647,17 +724,19 @@
 </p>
 
 <div class="flex items-baseline gap-2 mb-5 lg:mb-8">
-  <span
-    class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 dark:text-white"
-  >
-    735K
-  </span>
+<span
+  id="premium-setup-price"
+  class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 dark:text-white"
+>
+  735K
+</span>
 
-  <span
-    class="text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest text-sm"
-  >
-    LKR
-  </span>
+<span
+  id="premium-setup-currency"
+  class="text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest text-sm"
+>
+  LKR
+</span>
 </div>
 <p
   class="text-gray-600 dark:text-gray-400 mb-10 leading-relaxed text-lg"
@@ -755,7 +834,9 @@
 </div>
               </div>
 <p class="text-sm md:text-base text-gray-500 dark:text-gray-400 mt-4">
-  <strong class="text-white">LKR 504K per month fee</strong><br>
+  <strong id="premium-monthly" class="text-white">
+  LKR 504K per month fee
+</strong><br>
   Premium outreach, UK content, commercial development and opportunity support.<br><br>
   See full package breakdown below.
 </p>
@@ -2074,10 +2155,7 @@
           <p
             class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-6 md:mb-10 leading-relaxed font-medium max-w-xl"
           >
-            From understanding your business and establishing the UK operating
-            foundation to commercial positioning, CRM integration, marketplace
-            development and sales handover — see the structured process behind
-            taking your business into the UK market.
+            From understanding your business and establishing your UK operating foundation to marketplace launch, targeted prospect outreach, commercial development and ongoing refinement, see the structured process Meridian Elevate uses to build and grow your presence in the UK market.
           </p>
 
 
@@ -2980,5 +3058,120 @@
 </footer>
 
     <include-top-to-bottom />
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const pricing = {
+    sriLanka: {
+      currency: "LKR",
+      essential: { setup: "570K", monthly: "315K" },
+      advantage: { setup: "650K", monthly: "378K" },
+      premium: { setup: "735K", monthly: "504K" }
+    },
+
+    india: {
+      currency: "INR",
+      essential: { setup: "165K", monthly: "92K" },
+      advantage: { setup: "190K", monthly: "110K" },
+      premium: { setup: "215K", monthly: "150K" }
+    },
+
+    pakistan: {
+      currency: "PKR",
+      essential: { setup: "480K", monthly: "265K" },
+      advantage: { setup: "545K", monthly: "320K" },
+      premium: { setup: "615K", monthly: "425K" }
+    },
+
+    bangladesh: {
+      currency: "BDT",
+      essential: { setup: "215K", monthly: "120K" },
+      advantage: { setup: "245K", monthly: "140K" },
+      premium: { setup: "275K", monthly: "190K" }
+    },
+
+    nepal: {
+      currency: "NPR",
+      essential: { setup: "265K", monthly: "150K" },
+      advantage: { setup: "300K", monthly: "175K" },
+      premium: { setup: "340K", monthly: "235K" }
+    },
+
+    uae: {
+      currency: "AED",
+      essential: { setup: "6.4K", monthly: "3.5K" },
+      advantage: { setup: "7.3K", monthly: "4.2K" },
+      premium: { setup: "8.2K", monthly: "5.6K" }
+    },
+
+    otherAsia: {
+      currency: "USD",
+      essential: { setup: "1,750", monthly: "975" },
+      advantage: { setup: "2,000", monthly: "1,150" },
+      premium: { setup: "2,250", monthly: "1,550" }
+    }
+  };
+
+  const buttons = document.querySelectorAll(".pricing-country-btn");
+
+  function updatePricing(country) {
+    const selected = pricing[country];
+
+    ["essential", "advantage", "premium"].forEach(function (plan) {
+      document.getElementById(plan + "-setup-price").textContent =
+        selected[plan].setup;
+
+      document.getElementById(plan + "-setup-currency").textContent =
+        selected.currency;
+
+      document.getElementById(plan + "-monthly").textContent =
+        selected.currency + " " + selected[plan].monthly + " per month fee";
+    });
+
+    buttons.forEach(function (button) {
+      const active = button.dataset.country === country;
+
+      if (active) {
+        button.classList.remove(
+          "bg-gray-100",
+          "dark:bg-gray-800",
+          "text-gray-600",
+          "dark:text-gray-400",
+          "border-gray-200",
+          "dark:border-gray-700"
+        );
+
+        button.classList.add(
+          "bg-primary-500",
+          "text-white",
+          "border-primary-500",
+          "shadow-lg"
+        );
+      } else {
+        button.classList.remove(
+          "bg-primary-500",
+          "text-white",
+          "border-primary-500",
+          "shadow-lg"
+        );
+
+        button.classList.add(
+          "bg-gray-100",
+          "dark:bg-gray-800",
+          "text-gray-600",
+          "dark:text-gray-400",
+          "border-gray-200",
+          "dark:border-gray-700"
+        );
+      }
+    });
+  }
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      updatePricing(this.dataset.country);
+    });
+  });
+});
+</script>
   <script defer src="index.js"></script></body>
 </html>
