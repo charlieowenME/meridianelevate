@@ -18,6 +18,7 @@
 
   <title>Meridian Elevate | UK Representation & Growth</title>
 <link href="assets/css/index.css" rel="stylesheet"></head>
+
   <body
     class="bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 overflow-x-hidden"
   >
@@ -29,20 +30,24 @@
       <div
         class="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-primary-400/30 to-accent-500/30 rounded-full blur-3xl animate-blob"
       ></div>
+
       <div
         class="absolute top-0 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-400/30 to-pink-500/30 rounded-full blur-3xl animate-blob"
         style="animation-delay: 2s"
       ></div>
+
       <div
         class="absolute -bottom-32 left-1/2 w-96 h-96 bg-gradient-to-r from-blue-400/30 to-cyan-500/30 rounded-full blur-3xl animate-blob"
         style="animation-delay: 4s"
       ></div>
+
       <div id="particles-container"></div>
     </div>
 
     <!-- Custom Cursors -->
     <div id="cursor-dot" class="cursor-dot"></div>
     <div id="cursor-outline" class="cursor-outline"></div>
+
     <nav
   id="navbar"
   class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
@@ -336,173 +341,604 @@
 </nav>
 
 
-<!-- Blueprint Hero Section -->
-<section class="pt-30 md:pt-40 px-4 relative overflow-hidden">
-  <div class="container mx-auto max-w-7xl relative z-10 text-center">
-    <div class="reveal">
+    <!-- Terms Hero -->
+    <section class="pt-30 md:pt-40 px-4 relative overflow-hidden">
+      <div class="container mx-auto max-w-7xl relative z-10 text-center">
+        <div class="reveal">
+          <div
+            class="text-sm font-black uppercase tracking-widest text-purple-500 mb-4"
+          >
+            Legal
+          </div>
 
-<h2 class="page-heading">
-  <span style="color: #ffffff;">The</span>
-  <span class="text-gradient">Meridian Elevate Foundation</span>
-  <br />
-  <span style="color: #ffffff;">Blueprint</span>
-</h2>
+          <h2 class="page-heading">
+            <span style="color: #ffffff;">Terms &</span>
+            <span class="text-gradient">Conditions</span>
+          </h2>
 
-<p
-  class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-5xl mx-auto leading-relaxed font-medium"
->
-  UK market entry shouldn't be a collection of disconnected services.
+          <p
+            class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium"
+          >
+            These terms explain how Meridian Elevate services are agreed,
+            delivered, paid for and managed throughout the client relationship.
+          </p>
 
-  <span class="block mt-4">
-    The Meridian Elevate Commercial Blueprint brings those stages together,
-    continuously feeding every action, response and data point back into the CRM
-    to improve qualification, segmentation and every campaign that follows.
-  </span>
-</p>
-
-    </div>
-  </div>
-</section>
-
-<!-- Blueprint Display Section -->
-<section class="pt-12 md:pt-16 pb-20 md:pb-28 px-3 relative">
-  <div class="relative z-10 mx-auto" style="max-width: 1600px;">
-
-    <div
-      class="relative overflow-hidden rounded-3xl border border-white/10 bg-[#212121]"
-      style="
-        box-shadow:
-          inset 0 0 32px rgba(0,0,0,0.42),
-          0 18px 50px rgba(0,0,0,0.18);
-      "
-    >
-      <button
-        id="blueprint-open"
-        type="button"
-        class="block w-full cursor-zoom-in"
-        aria-label="Open Meridian Elevate Foundation Blueprint"
-      >
-        <img
-          src="assets/images/Meridian Elevate Website Blueprint.svg"
-          alt="Meridian Elevate Foundation Blueprint"
-          class="w-full h-auto block"
-        />
-      </button>
-
-      <div
-        class="absolute right-5 bottom-5 bg-black/60 text-white text-sm font-semibold px-4 py-2 rounded-full border border-white/15 backdrop-blur-sm pointer-events-none"
-      >
-        ⌕ &nbsp; Click to explore
+          <p
+            class="text-sm text-gray-500 dark:text-gray-500 max-w-3xl mx-auto leading-relaxed mt-5"
+          >
+            Last updated: August 2026
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <!-- Terms Content -->
+    <section class="py-16 md:py-20 lg:py-28 px-4 relative">
+      <div class="container mx-auto max-w-5xl relative z-10">
 
-<!-- Fullscreen Blueprint Viewer -->
-<div
-  id="blueprint-viewer"
-  class="fixed inset-0 hidden"
-  style="z-index: 99999; background: #212121;"
->
-  <div
-    id="blueprint-stage"
-    class="absolute inset-0 overflow-hidden cursor-grab"
-  >
-    <img
-      id="blueprint-full"
-      src="assets/images/Meridian Elevate Website Blueprint.svg"
-      alt="Meridian Elevate Foundation Blueprint"
-      draggable="false"
-      style="
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        max-width: none;
-        width: 3444px;
-        transform-origin: center center;
-        user-select: none;
-        pointer-events: none;
-      "
-    />
-  </div>
-
-  <div
-    class="absolute top-5 right-5 flex gap-2"
-    style="z-index: 100000;"
-  >
-    <button id="blueprint-minus"
-      class="bg-black/70 text-white border border-white/20 rounded-xl px-4 py-3">
-      −
-    </button>
-
-    <button id="blueprint-plus"
-      class="bg-black/70 text-white border border-white/20 rounded-xl px-4 py-3">
-      +
-    </button>
-
-    <button id="blueprint-fit"
-      class="bg-black/70 text-white border border-white/20 rounded-xl px-4 py-3">
-      Fit
-    </button>
-
-    <button id="blueprint-close"
-      class="bg-black/70 text-white border border-white/20 rounded-xl px-4 py-3">
-      ×
-    </button>
-  </div>
-
-  <div
-    class="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/60 text-sm pointer-events-none"
-  >
-    Drag to move · Scroll to zoom · Esc to close
-  </div>
-</div>
-
-<!-- News Letter -->
-<section class="py-16 md:py-20 lg:py-32 px-4 relative z-10">
-  <div class="container mx-auto max-w-7xl">
-  <div
-    class="relative p-6 md:p-12 lg:p-20 rounded-3xl bg-gray-900 text-white text-center reveal overflow-hidden shadow-3xl"
-  >
-    <!-- Background Effects -->
-    <div class="absolute inset-0 opacity-20 pointer-events-none">
-      <div
-        class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary-600 to-accent-600 blur-3xl opacity-30"
-      ></div>
-      <div
-        class="absolute -top-24 -right-24 w-96 h-96 bg-primary-500 rounded-full blur-[120px] animate-pulse"
-      ></div>
-    </div>
-
-    <div class="relative z-10">
-      <h2 class="page-heading">
-        Ready to <span class="text-gradient">Expand to the UK?</span>
-      </h2>
-      <p
-        class="text-xl md:text-2xl text-gray-400 mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed"
-      >
-        Let's establish your corporate infrastructure and cross-border operations for high-value growth.
-      </p>
-      <div class="flex flex-wrap gap-4 md:gap-6 justify-center">
-        <a
-          href="./contact.html"
-          class="px-3 md:px-5 py-3 md:py-5 bg-white text-gray-900 rounded-xl font-black hover:bg-primary-500 hover:text-white transition-all transform hover:scale-110 shadow-2xl"
+        <!-- Service Provider -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
         >
-          Schedule Strategy Call
-        </a>
-        <a
-          href="./projects.html"
-          class="px-3 md:px-5 py-3 md:py-5 border-2 border-white/20 text-white rounded-xl font-black hover:bg-white/10 transition-all"
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            01 · Service Provider
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Who you are contracting with.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Meridian Elevate is the trading name of Charlie Owen, operating as a
+            sole trader in the United Kingdom.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            References within these Terms to “Meridian Elevate”, “we”, “us” or
+            “our” mean Charlie Owen trading as Meridian Elevate.
+          </p>
+
+          <div
+            class="p-5 rounded-2xl border-2 border-amber-400 bg-amber-50 dark:bg-amber-500/10 mt-6"
+          >
+            <div
+              class="font-black text-amber-700 dark:text-amber-400 mb-2"
+            >
+              ADDRESS TO INSERT BEFORE PUBLICATION
+            </div>
+
+            <p class="text-amber-700 dark:text-amber-300 leading-relaxed">
+              Charlie Owen trading as Meridian Elevate<br />
+              Sole Trader, United Kingdom<br />
+              [INSERT MERIDIAN ELEVATE BUSINESS POSTAL ADDRESS]<br />
+              charlie@meridianelevate.co.uk
+            </p>
+          </div>
+        </div>
+
+        <!-- Agreement -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
         >
-          View Case Studies
-        </a>
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            02 · Agreement & Scope
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Services begin with an agreed scope.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            A client relationship begins after the client confirms by email that
+            they wish to proceed with a Meridian Elevate package or agreed scope
+            of work.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Meridian Elevate will then issue a written proposal, quotation or
+            confirmation of scope from charlie@meridianelevate.co.uk. The
+            applicable proposal, quotation and these Terms together form the
+            basis of the agreement between the client and Meridian Elevate.
+          </p>
+        </div>
+
+        <!-- Setup -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            03 · Setup Fees
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Setup is funded before work begins.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            The setup fee for the selected package must be paid in full before
+            Meridian Elevate can commence setup work.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Setup fees are designed to cover the actual infrastructure,
+            implementation and third-party costs required to establish the
+            agreed commercial foundation.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Payment is currently accepted through PayPal unless another payment
+            method is expressly agreed in writing.
+          </p>
+        </div>
+
+        <!-- Refunds -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            04 · Refunds
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Setup fees become non-refundable once committed.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Once setup work has commenced or Meridian Elevate has committed or
+            paid third-party costs on the client’s behalf, the setup fee is
+            non-refundable to the extent that work has been performed or costs
+            have been committed.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            This reflects the fact that setup expenditure may include services,
+            registrations, infrastructure and other costs that cannot themselves
+            be refunded once purchased or initiated.
+          </p>
+        </div>
+
+        <!-- Launch -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-emerald-500 mb-3"
+          >
+            05 · Launch & Retainer
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            The monthly retainer does not begin during setup.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            No monthly retainer is payable while the agreed package setup is
+            being completed.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Meridian Elevate will confirm when the required setup has reached
+            launch readiness. This date will be referred to as the
+            <strong>Launch Date</strong>.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            The first monthly retainer becomes payable in advance on the Launch
+            Date. Future monthly retainers will then fall due on the
+            corresponding calendar date each month.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Where setup takes longer because of genuine implementation
+            requirements, the client will not be charged an ongoing retainer
+            until Meridian Elevate declares the service ready to launch.
+          </p>
+        </div>
+
+        <!-- Minimum Term -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            06 · Minimum Term
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Three months from launch.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Ongoing Meridian Elevate packages have a minimum commitment of three
+            calendar months beginning on the Launch Date.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Following completion of the initial three-month period, either party
+            may terminate the ongoing service by giving at least 30 days’
+            written notice.
+          </p>
+        </div>
+
+        <!-- Client Responsibilities -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            07 · Client Responsibilities
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Delivery depends on cooperation from both sides.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            The client agrees to provide accurate information, documents,
+            credentials, approvals, commercial information and other reasonable
+            assistance required for Meridian Elevate to perform the agreed
+            services.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Meridian Elevate will discuss important campaign material with the
+            client before use, including significant outbound messaging,
+            presentations, pitch material, marketplace listings and HTML email
+            campaigns where applicable.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            The client remains responsible for ensuring that information,
+            statements, pricing, capabilities and claims they provide to
+            Meridian Elevate are accurate and may lawfully be used.
+          </p>
+        </div>
+
+        <!-- Client Delay -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            08 · Client Delays
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Projects cannot remain open indefinitely.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Where progress is delayed because the client does not provide
+            required information, documentation, approvals or access, Meridian
+            Elevate may pause the project until the required input is received.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            If the client remains inactive or fails to provide reasonably
+            required information for 30 consecutive days, Meridian Elevate may
+            suspend or close the setup project. Any setup fee already used for
+            work completed or costs committed will remain non-refundable.
+          </p>
+        </div>
+
+        <!-- Additional Costs -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            09 · Additional Costs
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Unexpected expenditure will be discussed first.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            The quoted setup fee is intended to include the expected costs
+            required to implement the agreed package.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            If an unexpected third-party requirement or additional expenditure
+            arises outside the agreed scope, Meridian Elevate will discuss this
+            with the client before incurring the additional cost.
+          </p>
+        </div>
+
+        <!-- No Guarantees -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-amber-500 mb-3"
+          >
+            10 · Commercial Outcomes
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Commercial activity cannot guarantee a specific outcome.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Meridian Elevate agrees to provide the services, commercial
+            infrastructure and activity described within the agreed package or
+            proposal.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Meridian Elevate does not guarantee any specific number of leads,
+            meetings, opportunities, contracts, clients, marketplace sales,
+            revenue, contract value or other commercial outcome.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Commercial performance is influenced by factors outside Meridian
+            Elevate’s control, including market conditions, the client’s
+            proposition, pricing, capability, competitiveness, buyer demand,
+            client responsiveness and decisions made by third parties.
+          </p>
+        </div>
+
+        <!-- Ownership -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            11 · Ownership & Intellectual Property
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            The commercial foundation is built to remain with the client.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Once applicable fees have been paid, bespoke commercial materials,
+            client-specific setup assets, campaign materials and operational
+            processes created specifically for the client are intended to remain
+            available to that client and, where applicable, its UK entity.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Meridian Elevate is designed so that a client may eventually operate
+            the implemented commercial foundation internally without requiring
+            Meridian Elevate indefinitely.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Meridian Elevate retains ownership of its underlying methodologies,
+            service structures, general templates, frameworks, systems,
+            processes, know-how and intellectual property. These may not be
+            resold, licensed, repackaged or commercially reproduced as a
+            competing service without written permission.
+          </p>
+        </div>
+
+        <!-- Confidentiality -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            12 · Confidentiality
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Commercial information is treated confidentially.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Each party agrees to take reasonable care to protect confidential
+            commercial, operational, financial and strategic information
+            received from the other and not to disclose it except where required
+            to deliver the agreed services, authorised by the other party or
+            required by law.
+          </p>
+        </div>
+
+        <!-- Taxes -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            13 · Taxes
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Taxes are applied where legally required.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Prices are exclusive of any taxes, duties or similar charges that
+            may become applicable. UK VAT or other applicable taxes will be
+            charged where legally required.
+          </p>
+        </div>
+
+        <!-- Third Parties -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            14 · Third-Party Services
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Some services depend on third-party providers.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Meridian Elevate may use or coordinate third-party providers,
+            platforms, marketplaces, software and infrastructure as part of the
+            agreed service. Meridian Elevate is not responsible for outages,
+            policy changes, suspensions, delays or failures caused solely by
+            third parties outside its reasonable control.
+          </p>
+        </div>
+
+        <!-- Liability -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            15 · Liability
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Services are delivered on a commercially reasonable basis.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Meridian Elevate will use reasonable skill and care when providing
+            the agreed services.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Nothing in these Terms excludes or limits liability where it would
+            be unlawful to do so. Subject to applicable law, Meridian Elevate
+            will not be responsible for indirect or consequential commercial
+            losses arising from market decisions, third-party decisions or
+            outcomes that cannot reasonably be controlled by Meridian Elevate.
+          </p>
+        </div>
+
+        <!-- Website -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            16 · Website & Case Studies
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Website material is provided for information and professional context.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Information published on the Meridian Elevate website is provided in
+            good faith for general information, commercial context and
+            professional portfolio purposes.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Case studies relating to Charlie Owen’s previous employment reflect
+            his own professional experience and career history. References to
+            former employers, clients or other organisations do not imply their
+            endorsement of Meridian Elevate unless expressly stated.
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Company-level information may also be drawn from public sources such
+            as Companies House or other publicly available corporate material
+            where identified.
+          </p>
+        </div>
+
+        <!-- Changes -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl mb-6 reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            17 · Changes to Terms
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            Terms may be updated as the service develops.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            Meridian Elevate may update these website Terms from time to time.
+            Changes will not retrospectively alter an agreed client proposal or
+            contractual commitment unless agreed between the parties or required
+            by law.
+          </p>
+        </div>
+
+        <!-- Law -->
+        <div
+          class="p-6 md:p-8 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl reveal"
+        >
+          <div
+            class="text-xs font-black uppercase tracking-widest text-purple-500 mb-3"
+          >
+            18 · Governing Law
+          </div>
+
+          <h3
+            class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-5"
+          >
+            England and Wales.
+          </h3>
+
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+            These Terms and any dispute arising from them are governed by the
+            laws of England and Wales, and the courts of England and Wales will
+            have jurisdiction, subject to any mandatory rights that apply under
+            applicable law.
+          </p>
+        </div>
+
       </div>
-    </div>
-  </div>
-</div>
-
-</section>
+    </section>
 <!-- Cookie Consent Banner -->
 <div
   id="cookie-banner"
@@ -558,7 +994,7 @@
     </div>
   </div>
 </div>
-<!-- Cookie Consent Banner -->
+    <!-- Cookie Consent Banner -->
 <div
   id="cookie-banner"
   class="fixed inset-x-4 bottom-4 md:left-1/2 md:right-auto md:-translate-x-1/2 md:w-[min(920px,calc(100%-2rem))] z-[9999] hidden"
@@ -832,8 +1268,7 @@
   </div>
 </footer>
 
-
-    <button
+        <button
       id="back-to-top"
       class="fixed bottom-4 md:bottom-8 right-4 md:right-8 w-10 h-10 md:w-14 md:h-14 bg-gradient-to-r from-primary-600 to-accent-600 text-white rounded-full shadow-2xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-40 cursor-pointer"
       aria-label="Back to top"
@@ -852,124 +1287,5 @@
         />
       </svg>
     </button>
-
-<script>
-  (() => {
-    const open = document.getElementById("blueprint-open");
-    const viewer = document.getElementById("blueprint-viewer");
-    const stage = document.getElementById("blueprint-stage");
-    const image = document.getElementById("blueprint-full");
-
-    const close = document.getElementById("blueprint-close");
-    const plus = document.getElementById("blueprint-plus");
-    const minus = document.getElementById("blueprint-minus");
-    const fit = document.getElementById("blueprint-fit");
-
-    let scale = 0.55;
-    let x = 0;
-    let y = 0;
-
-    let dragging = false;
-    let startX = 0;
-    let startY = 0;
-    let originalX = 0;
-    let originalY = 0;
-
-    function render() {
-      image.style.transform =
-        `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(${scale})`;
-    }
-
-    function openViewer() {
-      viewer.classList.remove("hidden");
-
-      scale = 0.55;
-      x = 0;
-      y = 0;
-
-      render();
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeViewer() {
-      viewer.classList.add("hidden");
-      document.body.style.overflow = "";
-    }
-
-    open.addEventListener("click", openViewer);
-    close.addEventListener("click", closeViewer);
-
-    plus.addEventListener("click", () => {
-      scale = Math.min(scale * 1.2, 4);
-      render();
-    });
-
-    minus.addEventListener("click", () => {
-      scale = Math.max(scale / 1.2, 0.15);
-      render();
-    });
-
-    fit.addEventListener("click", () => {
-      scale = Math.min(
-        window.innerWidth / image.naturalWidth,
-        window.innerHeight / image.naturalHeight
-      ) * 0.92;
-
-      x = 0;
-      y = 0;
-
-      render();
-    });
-
-    stage.addEventListener(
-      "wheel",
-      (event) => {
-        event.preventDefault();
-
-        scale =
-          event.deltaY < 0
-            ? Math.min(scale * 1.1, 4)
-            : Math.max(scale / 1.1, 0.15);
-
-        render();
-      },
-      { passive: false }
-    );
-
-    stage.addEventListener("pointerdown", (event) => {
-      dragging = true;
-
-      startX = event.clientX;
-      startY = event.clientY;
-
-      originalX = x;
-      originalY = y;
-
-      stage.style.cursor = "grabbing";
-      stage.setPointerCapture(event.pointerId);
-    });
-
-    stage.addEventListener("pointermove", (event) => {
-      if (!dragging) return;
-
-      x = originalX + event.clientX - startX;
-      y = originalY + event.clientY - startY;
-
-      render();
-    });
-
-    stage.addEventListener("pointerup", () => {
-      dragging = false;
-      stage.style.cursor = "grab";
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        closeViewer();
-      }
-    });
-  })();
-</script>
-
-<script defer src="index.js"></script></body>
+  <script defer src="index.js"></script></body>
 </html>

@@ -1,26 +1,6 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V5T22J3QK3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-V5T22J3QK3');
-  </script>
-
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "y614n877zu");
-  </script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -37,7 +17,6 @@
   <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
 
   <title>Meridian Elevate | UK Representation & Growth</title>
-
 <link href="assets/css/index.css" rel="stylesheet"></head>
 
   <style>
@@ -2490,105 +2469,306 @@
   method="POST"
   class="p-4 md:p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-2xl space-y-3 md:space-y-6"
 >
-              <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label
-                    for="name"
-                    class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
-                  >
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    class="w-full px-2 md:px-4 py-2 md:py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-gray-900 dark:text-white"
-                    placeholder="John Doe"
-                  />
-                </div>
-                <div>
-                  <label
-                    for="email"
-                    class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
-                  >
-                    Your Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    class="w-full px-2 md:px-4 py-2 md:py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-gray-900 dark:text-white"
-                    placeholder="john@example.com"
-                  />
-                </div>
-              </div>
+  <!-- Name + Email -->
+  <div class="grid md:grid-cols-2 gap-6">
+    <div>
+      <label
+        for="name"
+        class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+      >
+        Your Name
+      </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        class="w-full px-2 md:px-4 py-2 md:py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-gray-900 dark:text-white"
+        placeholder="John Doe"
+      />
+    </div>
 
-              <div>
-                <label
-                  for="subject"
-                  class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
-                >
-                  Company Name
-                </label>
-                <input
-                  type="text"
-                  id="Company Name"
-                  name="Company Name"
-                  required
-                  class="w-full px-2 md:px-4 py-2 md:py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-gray-900 dark:text-white"
-                  placeholder="Your Company Name"
-                />
-              </div>
+    <div>
+      <label
+        for="email"
+        class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+      >
+        Your Email
+      </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        class="w-full px-2 md:px-4 py-2 md:py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-gray-900 dark:text-white"
+        placeholder="john@example.com"
+      />
+    </div>
+  </div>
 
-              <div>
-                <label
-                  for="message"
-                  class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="6"
-                  required
-                  class="w-full px-2 md:px-4 py-2 md:py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none text-gray-900 dark:text-white"
-                  placeholder="Tell me about your project..."
-                ></textarea>
-              </div>
+  <!-- Company Name -->
+  <div>
+    <label
+      for="subject"
+      class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+    >
+      Company Name
+    </label>
+    <input
+      type="text"
+      id="subject"
+      name="subject"
+      required
+      class="w-full px-2 md:px-4 py-2 md:py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-gray-900 dark:text-white"
+      placeholder="Your Company Name"
+    />
+  </div>
 
-              <button
-                type="submit"
-                class="w-full group relative inline-flex items-center justify-center px-4 md:px-8 py-2 md:py-4 text-lg font-bold text-white bg-gradient-to-r from-primary-600 to-accent-600 rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary-500/50"
-              >
-                <span
-                  class="absolute inset-0 w-full h-full bg-gradient-to-r from-accent-600 to-primary-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                ></span>
-                <span class="relative flex items-center gap-2">
-                  Send Message
-                  <svg
-                    class="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13 7l5 5m0 0l-5 5m5-5H6"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </form>
+  <!-- Country + Package -->
+  <div class="grid md:grid-cols-2 gap-6">
+<div>
+  <label
+    for="country"
+    class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+  >
+    What Country Are You Located In?
+  </label>
+
+  <div class="relative">
+    <select
+      id="country"
+      name="country"
+      required
+      class="appearance-none w-full px-2 md:px-4 py-2 md:py-3 pr-10 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-gray-500 dark:text-gray-400"
+    >
+      <option value="" disabled selected>Select your country</option>
+      <option value="Sri Lanka">Sri Lanka</option>
+      <option value="India">India</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="Nepal">Nepal</option>
+      <option value="UAE">UAE</option>
+      <option value="Other Asia">Other Asia</option>
+    </select>
+
+    <svg
+      class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 dark:text-gray-500"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </div>
+</div>
+
+<div>
+  <label
+    for="package"
+    class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+  >
+    Which Package Are You Interested In?
+  </label>
+
+  <div class="relative">
+    <select
+      id="package"
+      name="package"
+      required
+      class="appearance-none w-full px-2 md:px-4 py-2 md:py-3 pr-10 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-gray-500 dark:text-gray-400"
+    >
+      <option value="" disabled selected>Select a package</option>
+      <option value="Essentials Package">Essentials Package</option>
+      <option value="Advantage Package">Advantage Package</option>
+      <option value="Premium Package">Premium Package</option>
+      <option value="I Need More Information">
+        I Need More Information
+      </option>
+    </select>
+
+    <svg
+      class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 dark:text-gray-500"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </div>
+</div>
+
+</div>
+<!-- End Country + Package grid -->
+
+<!-- Message -->
+<div>
+    <label
+      for="message"
+      class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+    >
+      Message
+    </label>
+    <textarea
+      id="message"
+      name="message"
+      rows="6"
+      required
+      class="w-full px-2 md:px-4 py-2 md:py-3 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none text-gray-900 dark:text-white"
+      placeholder="Please give us a brief description of your current UK setup and whether you have explored the UK market before..."
+    ></textarea>
+  </div>
+
+  <!-- Submit -->
+  <button
+    type="submit"
+    class="w-full group relative inline-flex items-center justify-center px-4 md:px-8 py-2 md:py-4 text-lg font-bold text-white bg-gradient-to-r from-primary-600 to-accent-600 rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary-500/50"
+  >
+    <span
+      class="absolute inset-0 w-full h-full bg-gradient-to-r from-accent-600 to-primary-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+    ></span>
+
+    <span class="relative flex items-center gap-2">
+      Send Message
+      <svg
+        class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 7l5 5m0 0l-5 5m5-5H6"
+        />
+      </svg>
+    </span>
+  </button>
+</form>
           </div>
         </div>
       </div>
     </section>
+<!-- Cookie Consent Banner -->
+<div
+  id="cookie-banner"
+  class="fixed inset-x-4 bottom-4 md:left-1/2 md:right-auto md:-translate-x-1/2 md:w-[min(920px,calc(100%-2rem))] z-[9999] hidden"
+>
+  <div
+    class="rounded-3xl border border-gray-200 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl shadow-2xl p-5 md:p-6"
+  >
+    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
+      <div class="max-w-2xl">
+        <div
+          class="text-xs font-black uppercase tracking-widest text-purple-500 mb-2"
+        >
+          Cookie Preferences
+        </div>
 
+        <h3
+          class="text-xl md:text-2xl font-black text-gray-900 dark:text-white mb-2"
+        >
+          We use optional analytics to improve the site.
+        </h3>
+
+        <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+          Meridian Elevate uses Google Analytics and Microsoft Clarity to
+          understand website traffic and how visitors use the site. These
+          technologies will only load if you accept optional analytics.
+          <a
+            href="cookies.html"
+            class="text-purple-500 hover:text-purple-400 font-semibold transition-colors"
+          >
+            Read our Cookie Policy.
+          </a>
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3 lg:flex-shrink-0">
+        <button
+          id="cookie-reject"
+          type="button"
+          class="px-5 py-3 rounded-xl border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-bold hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        >
+          Reject Analytics
+        </button>
+
+        <button
+          id="cookie-accept"
+          type="button"
+          class="px-5 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-primary-600 to-accent-600 hover:scale-105 transition-transform"
+        >
+          Accept Analytics
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Cookie Consent Banner -->
+<div
+  id="cookie-banner"
+  class="fixed inset-x-4 bottom-4 md:left-1/2 md:right-auto md:-translate-x-1/2 md:w-[min(920px,calc(100%-2rem))] z-[9999] hidden"
+>
+  <div
+    class="rounded-3xl border border-gray-200 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl shadow-2xl p-5 md:p-6"
+  >
+    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
+      <div class="max-w-2xl">
+        <div
+          class="text-xs font-black uppercase tracking-widest text-purple-500 mb-2"
+        >
+          Cookie Preferences
+        </div>
+
+        <h3
+          class="text-xl md:text-2xl font-black text-gray-900 dark:text-white mb-2"
+        >
+          We use optional analytics to improve the site.
+        </h3>
+
+        <p class="text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+          Meridian Elevate uses Google Analytics and Microsoft Clarity to
+          understand website traffic and how visitors use the site. These
+          technologies will only load if you accept optional analytics.
+          <a
+            href="cookies.html"
+            class="text-purple-500 hover:text-purple-400 font-semibold transition-colors"
+          >
+            Read our Cookie Policy.
+          </a>
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3 lg:flex-shrink-0">
+        <button
+          id="cookie-reject"
+          type="button"
+          class="px-5 py-3 rounded-xl border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-bold hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        >
+          Reject Analytics
+        </button>
+
+        <button
+          id="cookie-accept"
+          type="button"
+          class="px-5 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-primary-600 to-accent-600 hover:scale-105 transition-transform"
+        >
+          Accept Analytics
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
     <footer
   class="relative bg-gray-900 text-white pt-10 md:pt-16 lg:pt-20 px-4 sm:px-6 lg:px-8"
 >
@@ -2766,30 +2946,45 @@
       </div>
     </div>
 
-    <!-- Footer Bottom -->
-    <div
-      class="py-4 md:py-8 flex flex-col-reverse md:flex-row items-center justify-between gap-4"
+<!-- Footer Bottom -->
+<div
+  class="py-4 md:py-8 flex flex-col md:flex-row items-center justify-between gap-4"
+>
+  <p class="text-white text-center md:text-left">
+    &copy; 2026 Meridian Elevate. All rights reserved.
+  </p>
+
+  <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+    <a
+      href="privacy.html"
+      class="text-white hover:text-purple-400 transition-colors"
     >
-      <p class="text-gray-400 text-center md:text-left">
-        &copy; 2026
-        <a href="javascript:void(0)" class="hover:text-white duration-300"
-          >MeridianElevate.</a
-        >
-        All rights reserved.
-      </p>
-      <div class="flex gap-6">
-        <a
-          href="javascript:void(0)"
-          class="text-gray-400 hover:text-white transition-colors"
-          >Privacy Policy</a
-        >
-        <a
-          href="javascript:void(0)"
-          class="text-gray-400 hover:text-white transition-colors"
-          >Terms of Service</a
-        >
-      </div>
-    </div>
+      Privacy Policy
+    </a>
+
+    <a
+      href="terms.html"
+      class="text-white hover:text-purple-400 transition-colors"
+    >
+      Terms &amp; Conditions
+    </a>
+
+    <a
+      href="cookies.html"
+      class="text-white hover:text-purple-400 transition-colors"
+    >
+      Cookie Policy
+    </a>
+
+    <button
+      type="button"
+      id="cookie-settings"
+      class="text-white hover:text-purple-400 transition-colors"
+    >
+      Cookie Settings
+    </button>
+  </div>
+</div>
   </div>
 </footer>
 
